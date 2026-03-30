@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CDF 2026 - Régie Stream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-nav">
+        <button class="mode-btn active" onclick="switchMode('stats', this)">📊 STATS</button>
+        <button class="mode-btn" onclick="switchMode('debats', this)">💬 DÉBATS</button>
+        <button class="mode-btn" onclick="switchMode('crossword', this)">🧩 MOTS CROISÉS</button>
+        <a href="https://odds.nmckee.org/competition/FrenchChampionship2026" target="_blank" class="odds-link">🎲 ODDS</a>
+    </div>
+
+    <div id="sec-stats" class="section active">
+        <div class="tabs" id="tabContainer"></div>
+        <div id="cardsContainer"></div>
+    </div>
+
+    <div id="sec-debats" class="section">
+        <div class="centered-container">
+            <h1 style="font-family:'Sour Gummy'; color:var(--vert)">SUJETS DE DISCUSSION</h1>
+            <div class="display-text" id="debat-text" style="margin-top:50px">Cliquez pour lancer un débat</div>
+            <button class="control-btn" onclick="nextDebat()">Sujet Suivant</button>
+        </div>
+    </div>
+
+    <div id="sec-crossword" class="section">
+        <div class="crossword-card">
+            <h2 style="text-align:center; margin-top:0;">Mots Croisés de la Saison</h2>
+            <div style="text-align:center; margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
+                <select id="grid-selector" style="padding: 5px; font-size: 14px;">
+                    <option value="grille_cdf2025">Grille 1 : Villes des compétitions depuis les France 2025</option>
+                    <option value="grille_etrangers">Grille 2 : Les étrangers aux CDF 2026</option>
+                    <option value="grille_marques">Grille 3 : Marques de Cubes Mythiques</option>
+                    <option value="grille_champions">Grille 4 : Les Champions de France 3x3</option>
+                    <option value="grille_methodes">Grille 5 : Méthodes & Subsets</option>
+                    <option value="grille_hardcore">Grille 6 : Quiz Hardcore (Champions des 10 dernières années)</option>
+                </select>
+                <button class="reset-btn" onclick="resetGrid()">🔄 Réinitialiser</button>
+            </div>
+            
+            <div id="crossword-container"></div>
+            
+            <div id="clues-container">
+                <h3>Définitions <span style="font-size:12px; color:#666; font-weight:normal;">(Cliquez sur une ligne pour la remplir)</span></h3>
+                <ul id="clues-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="anecdote-modal" class="hidden">
+        <div class="modal-content">
+            <h3 id="modal-title" style="color: black; margin-top: 0;">Mot trouvé ! 🎉</h3>
+            <p id="anecdote-text" style="color: black; font-size: 18px; line-height: 1.4;"></p>
+            <button class="control-btn" id="close-modal" style="margin-top: 15px;">Fermer</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
