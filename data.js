@@ -2,25 +2,25 @@
 // data.js - TOUTES LES DONNÉES DU JEU
 // ==========================================
 
-const cubeData = {
-    "222": [["Alaric Pouchain", "1.48", "2019POUC01"], ["Anael Champion", "1.57", "2017CHAM02"], ["Juliette Sébastien", "1.58", "2014SEBA01"], ["Diego Fraile", "1.60", "2013FRAI01"], ["Elian Beguec", "1.62", "2014BEGU01"]],
-    "333": [["Juliette Sébastien", "5.98", "2014SEBA01"], ["Mathis Luc", "6.21", "2018LUCM01"], ["Alexandre Carlier", "6.64", "2012CARL03"], ["Quentin Rivault", "2017RIVA09", "2017RIVA09"], ["Nicolas Gertner Kilian", "6.85", "2013GERT01"]],
-    "444": [["Juliette Sébastien", "26.58", "2014SEBA01"], ["Jules Desjardin", "26.59", "2010DESJ01"], ["Alexandre Carlier", "26.60", "2012CARL03"], ["Lucas Déglise", "27.04", "2015DEGL01"], ["Abdelhak Kaddour", "27.46", "2010KADD01"]],
-    "555": [["Abdelhak Kaddour", "49.50", "2010KADD01"], ["Louis Fertier", "50.19", "2013FERT01"], ["Lucas Déglise", "51.03", "2015DEGL01"], ["Peter Grassard", "51.44", "2016GRAS01"], ["Baptiste Bery", "51.68", "2021BERY01"]],
-    "666": [["Peter Grassard", "1:29.87", "2016GRAS01"], ["Abdelhak Kaddour", "1:32.29", "2010KADD01"], ["Maxence Baudry", "1:38.79", "2014BAUD02"], ["Lucas Déglise", "1:38.79", "2015DEGL01"], ["Louis Fertier", "1:39.55", "2013FERT01"]],
-    "777": [["Maxence Baudry", "2:13.57", "2014BAUD02"], ["Peter Grassard", "2:14.93", "2016GRAS01"], ["Abdelhak Kaddour", "2:19.16", "2010KADD01"], ["Étienne Aubry", "2:34.72", "2018AUBR01"], ["Valentin Hoffmann", "2:35.18", "2011HOFF02"]],
-    "333oh": [["Juliette Sébastien", "9.11", "2014SEBA01"], ["Nicolas Gertner Kilian", "10.80", "2013GERT01"], ["Victor Colin", "11.86", "2013COLI02"], ["Mathis Luc", "12.00", "2018LUCM01"], ["Elian Beguec", "12.21", "2014BEGU01"]],
-    "clock": [["Baptiste Bery", "2.97", "2021BERY01"], ["Romain Velcin", "3.17", "2023VELC01"], ["César Essling", "3.36", "2022ESSL01"], ["Manu Dutheil", "3.91", "2018DUTH01"], ["Virgile Perrot", "4.18", "2017PERR02"]],
-    "minx": [["Rémi Perrin", "31.77", "2018PERR04"], ["Juliette Sébastien", "34.78", "2014SEBA01"], ["Théo Paris", "38.26", "2016PARI08"], ["Gabriel De Noni", "39.97", "2022NONI01"], ["Ilona Ansel", "41.09", "2016ANSE02"]],
-    "pyram": [["Jaimy Mfoumou", "1.98", "2023MFOU01"], ["Jules Desjardin", "2.16", "2010DESJ01"], ["Anthony Lafourcade", "2.16", "2014LAFO01"], ["Lev Azaria Doron", "2.66", "2024DORO01"], ["Luc Gély", "2.68", "2024GELY01"]],
-    "skewb": [["Anthony Lafourcade", "1.89", "2014LAFO01"], ["Adrien Romain", "2.10", "2022ROMA05"], ["Maxence Baudry", "2.51", "2014BAUD02"], ["Lucas Déglise", "2.86", "2015DEGL01"], ["Lev Azaria Doron", "3.05", "2024DORO01"]],
-    "sq1": [["Paul Luciw", "7.95", "2015LUCI02"], ["Arthur Provot", "8.06", "2018PROV01"], ["Lucas Déglise", "8.12", "2015DEGL01"], ["Basile Chandon", "8.48", "2022CHAN39"], ["Elouann Marfil", "9.14", "2017MARF01"]],
-    "333bf": [["Charles Daloz-Baltenberger", "13.22", "2018DALO01"], ["Arthur Garcin", "15.54", "2014GARC27"], ["Maxime Madrzyk", "15.65", "2018MADR02"], ["Quentin Rivault", "18.61", "2017RIVA09"], ["Marius Chaudesaygues", "20.26", "2022CHAU04"]],
-    "444bf": [["Arthur Garcin", "1:56.37", "2014GARC27"], ["Tiago Eche", "2:22.03", "2022ECHE01"], ["William Phommaha", "2:23.67", "2015PHOM01"], ["Jonathan Dammann", "2:32.81", "2021DAMM01"], ["Manu Dutheil", "2:43.76", "2018DUTH01"]],
-    "555bf": [["Arthur Garcin", "5:52.42", "2014GARC27"], ["William Phommaha", "6:34.10", "2015PHOM01"], ["Maxime Madrzyk", "6:50.77", "2018MADR02"], ["Jonathan Dammann", "7:18.96", "2021DAMM01"], ["Rodolphe Rouyrre", "7:55.56", "2020ROUY01"]],
-    "333mbf": [["Marius Chaudesaygues", "65/3490", "2022CHAU04"], ["Maxime Madrzyk", "69/3394", "2018MADR02"], ["Arthur Garcin", "77/3043", "2014GARC27"], ["Jonathan Dammann", "77/3169", "2021DAMM01"], ["Manu Dutheil", "78/3503", "2018DUTH01"]],
-    "333fm": [["Louis-Marie Ratto", "20.67", "2019RATT02"], ["Adrien Neveu", "21.00", "2018NEVE02"], ["Nicolas Gertner Kilian", "21.33", "2013GERT01"], ["Louis Sarthou", "22.00", "2012SART01"], ["Quentin Rivault", "22.33", "2017RIVA09"]]
-};
+//const cubeData = {
+//    "222": [["Alaric Pouchain", "1.48", "2019POUC01"], ["Anael Champion", "1.57", "2017CHAM02"], ["Juliette Sébastien", "1.58", "2014SEBA01"], ["Diego Fraile", "1.60", "2013FRAI01"], ["Elian Beguec", "1.62", "2014BEGU01"]],
+//    "333": [["Juliette Sébastien", "5.98", "2014SEBA01"], ["Mathis Luc", "6.21", "2018LUCM01"], ["Alexandre Carlier", "6.64", "2012CARL03"], ["Quentin Rivault", "2017RIVA09", "2017RIVA09"], ["Nicolas Gertner Kilian", "6.85", "2013GERT01"]],
+//    "444": [["Juliette Sébastien", "26.58", "2014SEBA01"], ["Jules Desjardin", "26.59", "2010DESJ01"], ["Alexandre Carlier", "26.60", "2012CARL03"], ["Lucas Déglise", "27.04", "2015DEGL01"], ["Abdelhak Kaddour", "27.46", "2010KADD01"]],
+//    "555": [["Abdelhak Kaddour", "49.50", "2010KADD01"], ["Louis Fertier", "50.19", "2013FERT01"], ["Lucas Déglise", "51.03", "2015DEGL01"], ["Peter Grassard", "51.44", "2016GRAS01"], ["Baptiste Bery", "51.68", "2021BERY01"]],
+//    "666": [["Peter Grassard", "1:29.87", "2016GRAS01"], ["Abdelhak Kaddour", "1:32.29", "2010KADD01"], ["Maxence Baudry", "1:38.79", "2014BAUD02"], ["Lucas Déglise", "1:38.79", "2015DEGL01"], ["Louis Fertier", "1:39.55", "2013FERT01"]],
+//    "777": [["Maxence Baudry", "2:13.57", "2014BAUD02"], ["Peter Grassard", "2:14.93", "2016GRAS01"], ["Abdelhak Kaddour", "2:19.16", "2010KADD01"], ["Étienne Aubry", "2:34.72", "2018AUBR01"], ["Valentin Hoffmann", "2:35.18", "2011HOFF02"]],
+//    "333oh": [["Juliette Sébastien", "9.11", "2014SEBA01"], ["Nicolas Gertner Kilian", "10.80", "2013GERT01"], ["Victor Colin", "11.86", "2013COLI02"], ["Mathis Luc", "12.00", "2018LUCM01"], ["Elian Beguec", "12.21", "2014BEGU01"]],
+//    "clock": [["Baptiste Bery", "2.97", "2021BERY01"], ["Romain Velcin", "3.17", "2023VELC01"], ["César Essling", "3.36", "2022ESSL01"], ["Manu Dutheil", "3.91", "2018DUTH01"], ["Virgile Perrot", "4.18", "2017PERR02"]],
+//    "minx": [["Rémi Perrin", "31.77", "2018PERR04"], ["Juliette Sébastien", "34.78", "2014SEBA01"], ["Théo Paris", "38.26", "2016PARI08"], ["Gabriel De Noni", "39.97", "2022NONI01"], ["Ilona Ansel", "41.09", "2016ANSE02"]],
+//    "pyram": [["Jaimy Mfoumou", "1.98", "2023MFOU01"], ["Jules Desjardin", "2.16", "2010DESJ01"], ["Anthony Lafourcade", "2.16", "2014LAFO01"], ["Lev Azaria Doron", "2.66", "2024DORO01"], ["Luc Gély", "2.68", "2024GELY01"]],
+//    "skewb": [["Anthony Lafourcade", "1.89", "2014LAFO01"], ["Adrien Romain", "2.10", "2022ROMA05"], ["Maxence Baudry", "2.51", "2014BAUD02"], ["Lucas Déglise", "2.86", "2015DEGL01"], ["Lev Azaria Doron", "3.05", "2024DORO01"]],
+//    "sq1": [["Paul Luciw", "7.95", "2015LUCI02"], ["Arthur Provot", "8.06", "2018PROV01"], ["Lucas Déglise", "8.12", "2015DEGL01"], ["Basile Chandon", "8.48", "2022CHAN39"], ["Elouann Marfil", "9.14", "2017MARF01"]],
+//    "333bf": [["Charles Daloz-Baltenberger", "13.22", "2018DALO01"], ["Arthur Garcin", "15.54", "2014GARC27"], ["Maxime Madrzyk", "15.65", "2018MADR02"], ["Quentin Rivault", "18.61", "2017RIVA09"], ["Marius Chaudesaygues", "20.26", "2022CHAU04"]],
+//    "444bf": [["Arthur Garcin", "1:56.37", "2014GARC27"], ["Tiago Eche", "2:22.03", "2022ECHE01"], ["William Phommaha", "2:23.67", "2015PHOM01"], ["Jonathan Dammann", "2:32.81", "2021DAMM01"], ["Manu Dutheil", "2:43.76", "2018DUTH01"]],
+//    "555bf": [["Arthur Garcin", "5:52.42", "2014GARC27"], ["William Phommaha", "6:34.10", "2015PHOM01"], ["Maxime Madrzyk", "6:50.77", "2018MADR02"], ["Jonathan Dammann", "7:18.96", "2021DAMM01"], ["Rodolphe Rouyrre", "7:55.56", "2020ROUY01"]],
+//    "333mbf": [["Marius Chaudesaygues", "65/3490", "2022CHAU04"], ["Maxime Madrzyk", "69/3394", "2018MADR02"], ["Arthur Garcin", "77/3043", "2014GARC27"], ["Jonathan Dammann", "77/3169", "2021DAMM01"], ["Manu Dutheil", "78/3503", "2018DUTH01"]],
+//    "333fm": [["Louis-Marie Ratto", "20.67", "2019RATT02"], ["Adrien Neveu", "21.00", "2018NEVE02"], ["Nicolas Gertner Kilian", "21.33", "2013GERT01"], ["Louis Sarthou", "22.00", "2012SART01"], ["Quentin Rivault", "22.33", "2017RIVA09"]]
+//};
 
 const debats = [
     "Quel est pour toi l'event le plus intéressant et pourquoi ?",
